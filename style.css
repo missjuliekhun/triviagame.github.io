@@ -1,0 +1,71 @@
+
+body  {
+  background-color: #f0f0f0;
+  margin: 25px;
+
+}
+
+
+h1 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+h2 {
+  font-family: Josefin Slab;
+  font-size: 33px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+ol {
+  display: inline-block;
+
+
+}
+
+.a1 {
+  margin: 0 auto;
+
+}
+
+.buttons {
+  text-align: center;
+  background-color: #0021ff;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.q1 {
+  font-size: 30px;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.q1 > p {
+  font-family: 'Russo One', sans-serif;
+
+}
+
+.answer {
+  font-family: 'Russo One', sans-serif;
+}
+
+ol li {
+    font-family: 'Share Tech Mono', monospace;
+    width: 300px;
+}
+
+.wrong:hover {
+  color: red;
+}
+
+.correct:hover {
+  color: red;
+}

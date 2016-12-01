@@ -3,10 +3,27 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 });
+//always put variables at top
+let score = 0; //this is your variable
 
 $futureButton = $('.future');
 $interButton = $('.interstellar');
 $thgButton = $('.thg');
+$liButton = $('li');
+
+$('.correct').click(function(){
+score++;
+$(".myScore").html(score);
+alert("Correct"); //anytime you want to access a variable - no quotes
+
+});
+
+$('.wrong').click(function(){
+alert('wrong');
+
+});
+
+
 
 
 //CLICK HANDLERS

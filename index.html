@@ -3,14 +3,25 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
 
     <title>Movie Trivia!</title>
-      <h1>MOVIE TRIVIA!</h1>
-      <h2>CHOOSE YOUR MOVIE</h2>
+
   </head>
 
 
   <body>
+    <div class="headers">
+    <h1>MOVIE TRIVIA!</h1>
+    <h2>CHOOSE YOUR MOVIE</h2>
+    <div class="score">
+      <p>SCORE</p>
+      <p class= "myScore"></p>
+    </div>
+    </div>
+
     <div class=buttons>
       <button class= "future">Back to The Future</button>
       <button class= "interstellar">Interstellar</button>
@@ -19,13 +30,16 @@
 
     <div class="futureQuestions">
       <div class="q1">
-        Q1: What is the name of the mall when Marty goes back to the future?
+        <p>Q1: What is the name of the mall when Marty goes back to the future?</p>
       <div class="a1">
-        A. Pines mall
-        B. Pine Mall
-        C. Twin Pine Mall
-        D. Lone Pine Mall
-  
+      <ol type= "A">
+            <li class="wrong">Pines Mall</li>
+            <li class="wrong">Pine Mall</li>
+            <li class="wrong">Twin Pine Mall</li>
+            <li class="correct">Lone Pine Mall</li>
+      </ol>
+
+
       </div>
       </div>
     </div>
