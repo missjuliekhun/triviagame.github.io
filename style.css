@@ -5,6 +5,11 @@ body  {
 
 }
 
+.score {
+   display: inline-flex;
+   margin-bottom: 10px;
+}
+
 
 h1 {
   font-family: 'Share Tech Mono', monospace;
@@ -15,7 +20,7 @@ h1 {
 
 
 h2 {
-  font-family: Josefin Slab;
+  font-family: arial;
   font-size: 33px;
   text-align: center;
   margin: 0 auto;
@@ -37,6 +42,7 @@ ol {
   background-color: #0021ff;
   color: #ffffff;
   font-size: 14px;
+  margin-top: 20px;
 }
 
 .q1 {
@@ -47,6 +53,26 @@ ol {
   border-radius: 10px;
   background: #ffffff;
 }
+
+.q2 {
+  font-size: 30px;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.q3 {
+  font-size: 30px;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+
 
 .q1 > p {
   font-family: 'Russo One', sans-serif;
