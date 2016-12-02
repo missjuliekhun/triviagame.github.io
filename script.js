@@ -1,14 +1,44 @@
 //Declare variables so buttons go to a prompt that displays questions
 //jQuery
+$('.littleQuestions').hide();
+$('.liloQuestions').hide();
+$('.aladdinQuestions').hide();
+
 $( document ).ready(function() {
     console.log( "ready!" );
 });
-//always put variables at top
-let score = 0; //this is your variable
+//DECLARE VARIABLES
+let score = 0;
 
-$futureButton = $('.future');
-$interButton = $('.interstellar');
-$thgButton = $('.thg');
+$littleButton = $('.little');
+$liloButton = $('.lilo');
+$aladdinButton = $('.aladdin');
+
+//SHOW AND HIDE QUESTIONS
+$littleButton.click(function(){
+$('.littleQuestions').show();
+$('.liloQuestions').hide();
+$('.aladdinQuestions').hide();
+});
+
+
+
+$liloButton.click(function(){
+$('.liloQuestions').show();
+$('.littleQuestions').hide();
+$('.aladdinQuestions').hide();
+});
+
+
+$aladdinButton.click(function(){
+$('.aladdinQuestions').show();
+$('.liloQuestions').hide();
+$('.littleQuestions').hide();
+});
+
+
+
+
 
 $('.q1 .correct').click(function(){
 score++;
@@ -56,15 +86,15 @@ $(".q3").hide();
 
 
 //CLICK HANDLERS
-$futureButton.on("click", futureQuestions);
-$interButton.on("click","");
-$thgButton.on("click","");
+// $littleButton.on("click", littleQuestions);
+// $interButton.on("click","");
+// $aladdinButton.on("click","");
 
 
-// When future question() is clicked {we want this to happen}
+// When little question() is clicked {we want this to happen}
 // prompt is being stored in userAnswer
 
- function futureQuestions(){};
+ // function littleQuestions(){};
 //   var userAnswer = prompt("What is the name of the mall?");
 //   if (userAnswer == "Pine Mall"){
 //     console.log(userAnswer);
