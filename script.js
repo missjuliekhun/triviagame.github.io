@@ -46,7 +46,8 @@ $aladdinButton.click(function(){
 $('.littleQuestions .correct1').click(function(){
   points++;
     $(".mypoints").html(points);
-    alert("Correct"); //anytime you want to access a variable - no quotes
+    alert("correct");
+     //anytime you want to access a variable - no quotes
     $(".littleQuestions > .q1").hide();
     });
 
