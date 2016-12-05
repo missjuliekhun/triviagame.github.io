@@ -5,6 +5,14 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
 
     <title>Movie Trivia!</title>
@@ -16,16 +24,16 @@
     <div class="headers">
     <h1><b><u>DISNEY MOVIE TRIVIA!</b></u></h1>
     <h2>CHOOSE YOUR MOVIE</h2>
-    <div class="score">
-      <p>SCORE</p>
-      <p class= "myScore"></p>
+    <div class="points">
+      <p>POINTS <font color="red" size= 12>&hearts;</font> </p>
+      <p class= "mypoints"></p>
     </div>
     </div>
 
     <div class=buttons>
-      <button class= "little">The Little Mermaid</button>
-      <button class= "lilo">Lilo and Stitch</button>
-      <button class= "aladdin">The Hunger Games</button>
+      <button type="button" class="btn btn-primary little">The Little Mermaid</button>
+      <button type="button" class="btn btn-primary lilo">Lilo and Stitch</button>
+      <button type="button" class="btn btn-primary aladdin">Aladdin</button>
     </div>
 
     <div class="littleQuestions">
@@ -33,10 +41,10 @@
         <p>Q1: What is the palace called?</p>
       <div class="a1">
       <ol type= "A">
-            <li class="wrong">Under the Sea</li>
-            <li class="wrong">Triton Kingdom</li>
-            <li class="correct">Atlantica</li>
-            <li class="wrong">Sea Kingdom</li>
+            <li class="wrong1">Under the Sea</li>
+            <li class="wrong1">Triton Kingdom</li>
+            <li class="correct1">Atlantica</li>
+            <li class="wrong1">Sea Kingdom</li>
       </ol>
 
 
@@ -49,10 +57,10 @@
         <p>Q2: How many sisters does Ariel have?</p>
       <div class="a2">
       <ol type= "A">
-            <li class="wrong">8</li>
-            <li class="correct">6</li>
-            <li class="wrong">10</li>
-            <li class="wrong">5</li>
+            <li class="wrong2">8</li>
+            <li class="correct2">6</li>
+            <li class="wrong2">10</li>
+            <li class="wrong2">5</li>
       </ol>
 
 
@@ -65,10 +73,10 @@
         <p>Q3: Why does Ariel lose her voice?</p>
       <div class="a3">
       <ol type= "A">
-            <li class="correct">Traded her voice to Ursula for legs</li>
-            <li class="wrong">Sold her soul to Ursula</li>
-            <li class="wrong">She sings too much</li>
-            <li class="wrong">Ate some bad fish</li>
+            <li class="correct3">Traded her voice to Ursula for legs</li>
+            <li class="wrong3">Sold her soul to Ursula</li>
+            <li class="wrong3">She sings too much</li>
+            <li class="wrong3">Ate some bad fish</li>
       </ol>
 
 
@@ -81,10 +89,10 @@
         <p>Q1: What does Ohana mean as stated by Lilo?</p>
       <div class="a1">
       <ol type= "A">
-            <li class="wrong">Loving each other no matter what</li>
-            <li class="correct">Family, and family means no one gets left behind</li>
-            <li class="wrong">Being one unit/li>
-            <li class="wrong">One house, one home</li>
+            <li class="wrong1">Loving each other no matter what</li>
+            <li class="correct1">Family, and family means no one gets left behind</li>
+            <li class="wrong1">Being one unit/li>
+            <li class="wrong1">One house, one home</li>
       </ol>
 
 
@@ -97,10 +105,10 @@
         <p>Q2: What alien number was Stitch?</p>
       <div class="a2">
       <ol type= "A">
-            <li class="wrong">333</li>
-            <li class="wrong">363</li>
-            <li class="correct">626</li>
-            <li class="wrong">13</li>
+            <li class="wrong2">333</li>
+            <li class="wrong2">363</li>
+            <li class="correct2">626</li>
+            <li class="wrong2">13</li>
       </ol>
 
 
@@ -113,10 +121,10 @@
         <p>Q3: Where was the movie set in?</p>
       <div class="a3">
       <ol type= "A">
-            <li class="wrong">Jamaica</li>
-            <li class="correct">Hawaii</li>
-            <li class="wrong">Florida</li>
-            <li class="wrong">Philipines</li>
+            <li class="wrong3">Jamaica</li>
+            <li class="correct3">Hawaii</li>
+            <li class="wrong3">Florida</li>
+            <li class="wrong3">Philipines</li>
       </ol>
 
 
@@ -129,10 +137,10 @@
         <p>Q1: What was Aladdin's last wish?</p>
       <div class="a1">
       <ol type= "A">
-            <li class="wrong">To show Jasmine the world</li>
-            <li class="wrong">Be a prince</li>
-            <li class="wrong">World peace</li>
-            <li class="correct">Free genie</li>
+            <li class="wrong1">To show Jasmine the world</li>
+            <li class="wrong1">Be a prince</li>
+            <li class="wrong1">World peace</li>
+            <li class="correct1">Free genie</li>
       </ol>
 
 
@@ -140,15 +148,15 @@
       </div>
     </div>
 
-    <div class="aladdinQuestions">
+    <div id="test1" class="aladdinQuestions">
       <div class="q2">
         <p>Q2: What was Aladdin's pet monkey named?</p>
       <div class="a2">
       <ol type= "A">
-            <li class="wrong">Buddy</li>
-            <li class="wrong">Agraba</li>
-            <li class="correct">Abu</li>
-            <li class="wrong">Jasmine</li>
+            <li class="wrong2">Buddy</li>
+            <li class="wrong2">Agraba</li>
+            <li class="correct2">Abu</li>
+            <li class="wrong2">Jasmine</li>
       </ol>
 
 
@@ -156,16 +164,18 @@
       </div>
     </div>
 
-    <div class="aladdinQuestions">
+    <div id="test2" class="aladdinQuestions">
       <div class="q3">
         <p>Q3: What kind of pet does Jasmine have?</p>
       <div class="a3">
       <ol type= "A">
-            <li class="wrong">Lion</li>
-            <li class="correct">Tiger</li>
-            <li class="wrong">Bear</li>
-            <li class="wrong">Cat</li>
+            <li class="wrong3">Lion</li>
+            <li class="correct3">Tiger</li>
+            <li class="wrong3">Bear</li>
+            <li class="wrong3">Cat</li>
       </ol>
+
+
 
 
       </div>
@@ -173,12 +183,13 @@
     </div>
 
 
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 
 
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="script.js" type="text/javascript"></script>
 
   </body>

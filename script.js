@@ -1,14 +1,17 @@
 //Declare variables so buttons go to a prompt that displays questions
 //jQuery
+window.globalVar = "This is global!";
+
+
 $('.littleQuestions').hide();
 $('.liloQuestions').hide();
 $('.aladdinQuestions').hide();
 
-$( document ).ready(function() {
+$(document).ready(function() {
     console.log( "ready!" );
 });
 //DECLARE VARIABLES
-let score = 0;
+let points = 0;
 
 $littleButton = $('.little');
 $liloButton = $('.lilo');
@@ -16,73 +19,149 @@ $aladdinButton = $('.aladdin');
 
 //SHOW AND HIDE QUESTIONS
 $littleButton.click(function(){
-$('.littleQuestions').show();
-$('.liloQuestions').hide();
-$('.aladdinQuestions').hide();
-});
+  $('.littleQuestions').show();
+  $('.liloQuestions').hide();
+  $('.aladdinQuestions').hide();
+  });
 
 
 
 $liloButton.click(function(){
-$('.liloQuestions').show();
-$('.littleQuestions').hide();
-$('.aladdinQuestions').hide();
-});
+  $('.liloQuestions').show();
+  $('.littleQuestions').hide();
+  $('.aladdinQuestions').hide();
+  });
 
 
 $aladdinButton.click(function(){
-$('.aladdinQuestions').show();
-$('.liloQuestions').hide();
-$('.littleQuestions').hide();
-});
+  $('.aladdinQuestions').show();
+  $('.liloQuestions').hide();
+  $('.littleQuestions').hide();
+  });
 
 
 
 
+//QUESTION ONE IS CORRECT OR WRONG
+$('.littleQuestions .correct1').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".littleQuestions > .q1").hide();
+    });
 
-$('.q1 .correct').click(function(){
-score++;
-$(".myScore").html(score);
-alert("Correct"); //anytime you want to access a variable - no quotes
-$(".q1").remove();
+//QUESTION TWO IS CORRECT OR WRONG
+$('.littleQuestions .wrong1').click(function(){
+  alert('wrong');
+  $(".littleQuestions > .q1").hide();
+  });
+
+$('.littleQuestions .correct2').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".littleQuestions .q2").hide();
+    });
+
+//QUESTION TWO IS CORRECT OR WRONG
+$('.littleQuestions .wrong2').click(function(){
+  alert('wrong');
+  $(".littleQuestion .q2").hide();
+  });
+
+$('.littleQuestions .correct3').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".littleQuestions .q3").hide();
+    });
+
+//QUESTION TWO IS CORRECT OR WRONG
+$('.littleQuestions .wrong3').click(function(){
+  alert('wrong');
+  $(".littleQuestions .q3").hide();
+  });
+
+// LILO questions
+//QUESTION ONE IS CORRECT OR WRONG
+$('.liloQuestions .correct1').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".liloQuestions .q1").hide();
+    });
+
+//QUESTION TWO IS CORRECT OR WRONG
+$('.liloQuestions .wrong1').click(function(){
+  alert('wrong');
+  $(".liloQuestions .q1").hide();
+  });
+
+$('.liloQuestions .correct2').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".liloQuestions .q2").hide();
+    });
+
+//QUESTION TWO IS CORRECT OR WRONG
+$('.liloQuestions .wrong2').click(function(){
+  alert('wrong');
+  $(".liloQuestions .q2").hide();
+  });
+
+$('.liloQuestions .correct3').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".liloQuestions .q3").hide();
+    });
+
+//QUESTION TWO IS CORRECT OR WRONG
+$('.liloQuestions .wrong3').click(function(){
+  alert('wrong');
+  $(".liloQuestions .q3").hide();
+  });
 
 
-});
+$('.aladdinQuestions .correct1').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".aladdinQuestions .q1").hide();
+    });
 
-$('.q1 .wrong').click(function(){
-alert('wrong');
-$(".q1").hide();
-});
+//QUESTION TWO IS CORRECT OR WRONG
+$('.aladdinQuestions .wrong1').click(function(){
+  alert('wrong');
+  $(".aladdinQuestions .q1").hide();
+  });
 
+$('.aladdinQuestions .correct2').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".aladdinQuestions .q2").hide();
+    });
 
-$('.q2 .correct').click(function(){
-score++;
-$(".myScore").html(score);
-alert("Correct"); //anytime you want to access a variable - no quotes
-$(".q2").remove();
+//QUESTION TWO IS CORRECT OR WRONG
+$('.aladdinQuestions .wrong2').click(function(){
+  alert('wrong');
+  $(".aladdinQuestions .q2").hide();
+  });
 
+$('.aladdinQuestions .correct3').click(function(){
+  points++;
+    $(".mypoints").html(points);
+    alert("Correct"); //anytime you want to access a variable - no quotes
+    $(".aladdinQuestions .q3").hide();
+    });
 
-});
-
-$('.q2 .wrong').click(function(){
-alert('wrong');
-$(".q2").hide();
-});
-
-$('.q3 .correct').click(function(){
-score++;
-$(".myScore").html(score);
-alert("Correct"); //anytime you want to access a variable - no quotes
-$(".q3").remove();
-
-
-});
-
-$('.q3 .wrong').click(function(){
-alert('wrong');
-$(".q3").hide();
-});
-
+//QUESTION TWO IS CORRECT OR WRONG
+$('.aladdinQuestions .wrong3').click(function(){
+  alert('wrong');
+  $(".aladdinQuestions .q3").hide();
+  });
 
 
 //CLICK HANDLERS

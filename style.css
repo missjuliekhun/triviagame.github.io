@@ -1,26 +1,29 @@
 
 body  {
-  background-color: #f0f0f0;
+  background-color: #000000;
   margin: 25px;
+  text-align: center;
 
 }
 
-.score {
+
+.points {
    display: inline-flex;
-   margin-bottom: 10px;
+   margin-bottom: -6px;
+   font-size: 25px;
 }
 
 
-h1 {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 50px;
+h1 b u {
+  font-family:'Share Tech Mono', monospace ;
+  font-size: 70px;
   text-align: center;
   margin: 0 auto;
 }
 
 
 h2 {
-  font-family: arial;
+  font-family: impact;
   font-size: 33px;
   text-align: center;
   margin: 0 auto;
@@ -28,21 +31,26 @@ h2 {
 
 ol {
   display: inline-block;
-
-
+  text-align: center;
 }
 
 .a1 {
   margin: 0 auto;
+  text-align: center;
 
 }
 
 .buttons {
-  text-align: center;
-  background-color: #0021ff;
-  color: #ffffff;
-  font-size: 14px;
-  margin-top: 20px;
+    background-color: #4CAF50;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
 }
 
 .q1 {
@@ -51,7 +59,8 @@ ol {
   border: 1px solid black;
   padding: 10px;
   border-radius: 10px;
-  background: #ffffff;
+  background: #f0f0f0;
+  text-align: center;
 }
 
 .q2 {
@@ -60,7 +69,8 @@ ol {
   border: 1px solid black;
   padding: 10px;
   border-radius: 10px;
-  background: #ffffff;
+  background: #f0f0f0;
+  text-align: center;
 }
 
 .q3 {
@@ -69,29 +79,57 @@ ol {
   border: 1px solid black;
   padding: 10px;
   border-radius: 10px;
-  background: #ffffff;
+  background: #f0f0f0;
+  text-align: center;
 }
 
 
 
 .q1 > p {
   font-family: 'Russo One', sans-serif;
+  text-align: center;
+
+}
+.q2 > p {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+
+}
+.q3 > p {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
 
 }
 
 .answer {
   font-family: 'Russo One', sans-serif;
+  text-align: center;
 }
 
 ol li {
     font-family: 'Share Tech Mono', monospace;
     width: 300px;
+    text-align: center;
 }
 
-.wrong:hover {
+.wrong1:hover {
   color: red;
 }
 
-.correct:hover {
+.correct1:hover {
+  color: red;
+}
+.wrong2:hover {
+  color: red;
+}
+
+.correct2:hover {
+  color: red;
+}
+.wrong3:hover {
+  color: red;
+}
+
+.correct3:hover {
   color: red;
 }
